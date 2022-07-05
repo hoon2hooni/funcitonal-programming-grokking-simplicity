@@ -18,11 +18,10 @@ export function calcCartTotal() {
   updateShippingIcons();
   updateTaxDom();
 }
+
 function calcTotal(cart: Cart) {
-  let total = 0;
-  for (let i = 0; i < cart.length; i++) {
-    const item = cart[i];
-    total += item.price;
-  }
-  return shippingCartTotal;
+  const total = cart.reduce((acc, {price})=>{
+    return acc + price
+  },0)
+  return total;
 }

@@ -1,8 +1,5 @@
-type Button = {
-  item: { price: number };
-  showFreeShippingIcon: () => void;
-  hideFreeShippingIcon: () => void;
-};
+import { Button } from "./types";
+
 let shippingCartTotal = 100000;
 
 function showFreeShippingIcon() {

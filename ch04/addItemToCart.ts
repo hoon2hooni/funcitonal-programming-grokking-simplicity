@@ -13,6 +13,7 @@ const addItemToCart: AddItemToCart = (name, price) => {
   shoppingCart = addItem(shoppingCart, name, price);
   calcCartTotal();
 };
+
 function addItem(cart: Cart, name: string, price: number) {
   const newCart = [
     ...cart,
