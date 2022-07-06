@@ -1,5 +1,5 @@
 import { calcCartTotal } from "./calcCartTotal";
-import { Cart } from "./types";
+import { Cart } from "types";
 type AddItemToCart = (name: string, price: number) => void;
 
 let shoppingCart = [

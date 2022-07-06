@@ -1,5 +1,5 @@
-import { shoppingCart } from "./const";
-import { Cart } from "./types";
+import { shoppingCart } from "const";
+import { Cart } from "types";
 
 function setCartTotalDom() {
   /** */
@@ -19,9 +19,9 @@ export function calcCartTotal() {
   updateTaxDom();
 }
 
-function calcTotal(cart: Cart) {
-  const total = cart.reduce((acc, {price})=>{
-    return acc + price
-  },0)
+export function calcTotal(cart: Cart) {
+  const total = cart.reduce((acc, { price }) => {
+    return acc + price;
+  }, 0);
   return total;
 }

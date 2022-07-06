@@ -1,4 +1,4 @@
-import { Button } from "./types";
+import { Button } from "types";
 
 let shippingCartTotal = 100000;
 
