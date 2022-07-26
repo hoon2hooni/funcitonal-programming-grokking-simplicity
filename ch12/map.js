@@ -41,7 +41,7 @@ function customerCities(customers) {
 /// Replaced with callback
 
 function emailsForCustomers(customers, goods, bests) {
-  return map(array, (customer) => {
+  return map(customers, (customer) => {
     return emailForCustomer(customer, goods, bests);
   });
 }
